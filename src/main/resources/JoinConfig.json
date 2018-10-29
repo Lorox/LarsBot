@@ -1,0 +1,10 @@
+{
+  "guildId": 219908477370236928,
+  "joinMessagePath": "JoinMessage.txt",
+  "rolesConfig": {
+    "oathsworn": {
+      "roleId": 478608514500132875,
+      "roleRulesPath": "RaiderInfo.txt"
+    }
+  }
+}

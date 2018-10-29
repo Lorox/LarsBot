@@ -3,3 +3,4 @@
 build
 out
 application.log
+src/main/resources/tokens/

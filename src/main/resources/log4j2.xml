@@ -10,4 +10,14 @@
             <AppenderRef ref="File"/>
         </Root>
     </Loggers>
+    <Loggers>
+        <Root level="warn">
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
 </Configuration>
