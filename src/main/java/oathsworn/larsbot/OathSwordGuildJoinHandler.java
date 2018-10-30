@@ -24,9 +24,7 @@ final class OathSwordGuildJoinHandler extends ListenerAdapter {
     private final OathSwornGuildJoinConfig joinConfig;
 
     @Inject
-    public OathSwordGuildJoinHandler(
-            JDA jda,
-            MessageSendingService messageSendingService) {
+    public OathSwordGuildJoinHandler(MessageSendingService messageSendingService) {
 
         this.messageSendingService = messageSendingService;
         try {
@@ -42,8 +40,6 @@ final class OathSwordGuildJoinHandler extends ListenerAdapter {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-        jda.addEventListener(this);
     }
 
     @Override
