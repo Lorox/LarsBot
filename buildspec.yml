@@ -8,4 +8,4 @@ phases:
     - ./gradlew build
 artifacts:
   files:
-  - build/**/*
+  - build/distributions/LarsBot-1.0.0.zip
