@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-- source: source
+- source: /build/install/
   destination: /home/ec2-user/
 hooks:
   ApplicationStart:
-  - location: scripts/LarsBot
+  - location: /home/ec2-user/Larsbot/bin/LarsBot
     timeout: 300
     runas: root

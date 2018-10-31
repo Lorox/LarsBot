@@ -5,7 +5,8 @@ phases:
     commands:
     - echo Build started...
     - chmod +x gradlew
-    - ./gradlew build
+    - ./gradlew installDist
 artifacts:
   files:
-  - build/distributions/LarsBot-1.0.0.zip
+  - build/install/**/*
+  - appspec.yml
