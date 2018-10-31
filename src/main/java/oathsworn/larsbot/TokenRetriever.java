@@ -15,7 +15,7 @@ final class TokenRetriever {
     private final static String TOKEN_BUCKET = "larsbotcredentials";
     private final static String TOKEN_PATH = "botTokens/botToken";
 
-    private final AmazonS3Client s3Client;
+    private final AmazonS3Client  s3Client;
 
     public TokenRetriever() {
         s3Client = new AmazonS3Client();

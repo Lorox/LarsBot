@@ -5,6 +5,6 @@ files:
   destination: /home/ec2-user/
 hooks:
   ApplicationStart:
-  - location: /home/ec2-user/Larsbot/bin/LarsBot
+  - location: /home/ec2-user/Larsbot/bin/larsbot.sh
     timeout: 300
     runas: root
