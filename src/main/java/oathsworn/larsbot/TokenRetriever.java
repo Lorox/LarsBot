@@ -1,6 +1,7 @@
 package oathsworn.larsbot;
 
 import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.model.GetObjectRequest;
 import lombok.extern.log4j.Log4j2;
 import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.Level;
@@ -24,7 +25,7 @@ final class TokenRetriever {
 
         try {
             return IOUtils.toString(
-                    s3Client.getObject(TOKEN_BUCKET, TOKEN_PATH).getObjectContent(),
+                    s3Client.getObject(new GetObjectRequest(TOKEN_BUCKET, TOKEN_PATH)).getObjectContent(),
                     Charset.defaultCharset());
         } catch (IOException e) {
             log.log(Level.ERROR, e);
