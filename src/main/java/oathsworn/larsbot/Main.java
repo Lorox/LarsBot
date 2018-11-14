@@ -9,8 +9,8 @@ public final class Main {
 
     public static void main(String[] args) {
        Injector injector =
-               Guice.createInjector(new LarsBotModule());
+               Guice.createInjector(new LarsBotModule(new TokenRetrieverProdImpl()));
        JDA jda = injector.getInstance(JDA.class);
-       jda.addEventListener(injector.getInstance(OathSwordGuildJoinHandler.class));
+       jda.addEventListener(injector.getInstance(GuildRulesAcceptedHandler.class));
     }
 }
