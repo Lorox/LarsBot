@@ -65,7 +65,7 @@ final class LootListenerItem {
     private MessageEmbed.Field getWowheadUrlField() {
         StringBuilder wowheadUrl = new StringBuilder();
         wowheadUrl.append("https://www.wowhead.com/item=" + id + "/&bonus=");
-        bonusIds.forEach(i -> wowheadUrl.append(i + ":"));
+        bonusIds.forEach(i -> wowheadUrl.append(":" + i));
         return new MessageEmbed.Field("Wowhead url: ", wowheadUrl.toString(), false);
     }
 }

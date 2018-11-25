@@ -106,6 +106,7 @@ final class BossLootListener {
                                 config.getGuildRegion(),
                                 news.getTimestamp());
 
+                log.log(Level.INFO, "Sending loot update...");
                 jda.getTextChannelById(config.getMessageChannelId())
                         .sendMessage(lootListenerItem.getEmbed())
                         .queue();
