@@ -58,8 +58,6 @@ final class LarsBotModule extends AbstractModule {
     private JDA initalizeJDA() {
         try {
 
-            System.out.println("Called");
-
             JDA jda = new JDABuilder(tokenRetriever.getBotToken())
                     .build();
 

@@ -154,6 +154,8 @@ final class BlizzardClientImpl implements BlizzardClient {
             URIBuilder uriBuilder = new URIBuilder(url);
             uriBuilder.setParameters(params);
             HttpGet httpGet = new HttpGet(uriBuilder.build());
+            httpGet.setHeader("Cache-Control", "no-cache");
+            httpGet.setHeader("Pragma", "no-cache");
 
             HttpResponse response = null;
             for (int i = 0; i < MAX_RETRIES; i++) {
@@ -188,9 +190,12 @@ final class BlizzardClientImpl implements BlizzardClient {
 
             return responseBuilder.build();
         } catch (InterruptedException | IOException | URISyntaxException e) {
-            log.log(Level.ERROR, "Unexpected exception", e);
-            throw new RuntimeException(e);
+            log.log(Level.ERROR, "Unexpected exception, continuing...", e);
         }
+
+        return GetRequestResponse.<T>builder()
+                .responseCode(HttpStatus.SC_METHOD_FAILURE)
+                .build();
     }
 
     @Value

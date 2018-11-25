@@ -28,7 +28,7 @@ final class BossLootListener {
             JDA jda,
             LootListenerItemAdapter lootListenerItemAdapter,
             @BossLootListenerExecutor
-            ExecutorService executorService) {
+                    ExecutorService executorService) {
         this.config = config;
         this.blizzardClient = blizzardClient;
         this.jda = jda;

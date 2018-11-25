@@ -11,6 +11,10 @@
     "slotName": "Shoulders",
     "simcSlotName": "shoulders"
   },
+  "5": {
+    "slotName": "Chest",
+    "simcSlotName": "chest"
+  },
   "6": {
     "slotName": "Waist",
     "simcSlotName": "waist"
