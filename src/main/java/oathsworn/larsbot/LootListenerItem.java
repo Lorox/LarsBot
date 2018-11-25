@@ -57,7 +57,7 @@ final class LootListenerItem {
 
     private MessageEmbed.Field getSimStringField() {
         StringBuilder simcString = new StringBuilder();
-        simcString.append(simcSlotName + "=,id=" + id + ",bonusid=");
+        simcString.append(simcSlotName + "=,id=" + id + ",bonus_id=");
         bonusIds.forEach(i -> simcString.append(i + "/"));
         return new MessageEmbed.Field("Sim String: ", simcString.toString(), false);
     }
