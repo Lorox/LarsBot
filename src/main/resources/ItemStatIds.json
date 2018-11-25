@@ -1,0 +1,45 @@
+{
+  "3": [
+    "Agility"
+  ],
+  "4": [
+    "Strength"
+  ],
+  "5": [
+    "Intellect"
+  ],
+  "7": [
+    "Stamina"
+  ],
+  "32": [
+    "Critical Strike"
+  ],
+  "36": [
+    "Haste"
+  ],
+  "40": [
+    "Versatility"
+  ],
+  "49": [
+    "Mastery"
+  ],
+  "62": [
+    "Leech"
+  ],
+  "63": [
+    "Avoidance"
+  ],
+  "71": [
+    "Agility",
+    "Intellect",
+    "Strength"
+  ],
+  "73": [
+    "Agility",
+    "Intellect"
+  ],
+  "74": [
+    "Strength",
+    "Intellect"
+  ]
+}

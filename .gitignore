@@ -4,3 +4,5 @@ build
 out
 application.log
 src/main/resources/tokens/
+src/main/java/oathsworn/larsbot/TestMain.java
+src/main/java/oathsworn/larsbot/TokenRetrieverTestImpl.java

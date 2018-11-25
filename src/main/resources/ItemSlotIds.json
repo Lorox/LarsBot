@@ -1,0 +1,78 @@
+{
+  "1": {
+    "slotName": "Head",
+    "simcSlotName": "head"
+  },
+  "2": {
+    "slotName": "Neck",
+    "simcSlotName": "neck"
+  },
+  "3": {
+    "slotName": "Shoulders",
+    "simcSlotName": "shoulders"
+  },
+  "6": {
+    "slotName": "Waist",
+    "simcSlotName": "waist"
+  },
+  "7": {
+    "slotName": "Legs",
+    "simcSlotName": "legs"
+  },
+  "8": {
+    "slotName": "Feet",
+    "simcSlotName": "feet"
+  },
+  "9": {
+    "slotName": "Wrist",
+    "simcSlotName": "wrist"
+  },
+  "10": {
+    "slotName": "Hands",
+    "simcSlotName": "hands"
+  },
+  "11": {
+    "slotName": "Ring",
+    "simcSlotName": "ring<1/2>"
+  },
+  "12": {
+    "slotName": "Trinket",
+    "simcSlotName": "trinket<1/2>"
+  },
+  "13": {
+    "slotName": "One Hand",
+    "simcSlotName": "<main_hand/off_hand>"
+  },
+  "14": {
+    "slotName": "Shield",
+    "simcSlotName": "off_hand"
+  },
+  "15": {
+    "slotName": "Bow",
+    "simcSlotName": "main_hand"
+  },
+  "16": {
+    "slotName": "Back",
+    "simcSlotName": "back"
+  },
+  "17": {
+    "slotName": "Two Hand",
+    "simcSlotName": "main_hand"
+  },
+  "21": {
+    "slotName": "Main Hand",
+    "simcSlotName": "main_hand"
+  },
+  "22": {
+    "slotName": "Off Hand",
+    "simcSlotName": "off_hand"
+  },
+  "23": {
+    "slotName": "Off Hand",
+    "simcSlotName": "off_hand"
+  },
+  "26": {
+    "slotName": "Gun",
+    "simcSlotName": "main_hand"
+  }
+}

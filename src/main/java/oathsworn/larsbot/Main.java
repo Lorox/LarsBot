@@ -12,5 +12,6 @@ public final class Main {
                Guice.createInjector(new LarsBotModule(new TokenRetrieverProdImpl()));
        JDA jda = injector.getInstance(JDA.class);
        jda.addEventListener(injector.getInstance(GuildRulesAcceptedHandler.class));
+       injector.getInstance(BossLootListener.class).start();
     }
 }
