@@ -156,6 +156,12 @@ final class BlizzardClientImpl implements BlizzardClient {
             HttpGet httpGet = new HttpGet(uriBuilder.build());
             httpGet.setHeader("Cache-Control", "no-cache");
             httpGet.setHeader("Pragma", "no-cache");
+            httpGet.setHeader("Accept", "application/json");
+            httpGet.setHeader("Accept-Encoding", "gzip, deflate, br");
+            httpGet.setHeader("Accept-Language", "en-US,en;q=0.9,en-GB;q=0.8");
+            httpGet.setHeader("Connection", "keep-alive");
+            httpGet.setHeader("Host", "eu.api.blizzard.com");
+            httpGet.setHeader("Upgrade-Insecure-Requests", "1");
 
             HttpResponse response = null;
             for (int i = 0; i < MAX_RETRIES; i++) {
