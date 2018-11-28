@@ -39,16 +39,27 @@ final class BossLootListener {
     public void start() {
         running = true;
         lastUpdateTime = System.currentTimeMillis();
-        executorService.submit(this::listenLoop);
+        executorService.submit(this::listen);
     }
 
     public void stop() {
         running = false;
     }
 
+    private void listen() {
+        try {
+            log.log(Level.INFO, "Starting boss loot listener...");
+            listenLoop();
+        } catch (Exception e) {
+            log.log(Level.ERROR, e);
+            throw new RuntimeException(e);
+        } finally {
+            log.log(Level.INFO, "Shutting down boss loot listener.");
+        }
+    }
+
     private void listenLoop() {
 
-        log.log(Level.INFO, "Starting boss loot listener...");
         while (running) {
 
             try {
@@ -113,6 +124,5 @@ final class BossLootListener {
             }
             lastUpdateTime = guildNews.getLastModified();
         }
-        log.log(Level.INFO, "Boss loot listener shutting down.");
     }
 }
